@@ -20,7 +20,7 @@ class RootNavigationController: UINavigationController {
     // MARK: - Reset
     
     func canBeMadeHeadViewController(viewController: UIViewController) -> Bool {
-        return viewController.isKind(of: UITabBarController.self)
+        return viewController.isKind(of: RootTabBarController.self) || viewController.isKind(of: TutorialViewController.self)
     }
     
     func resetNavigationStackWithLatestViewControllerAsHead() {
@@ -33,6 +33,12 @@ class RootNavigationController: UINavigationController {
 extension RootNavigationController: UINavigationControllerDelegate {
     
     // MARK: - UINavigationControllerDelegate
+    
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if canBeMadeHeadViewController(viewController: viewController) {
+            viewController.navigationItem.setHidesBackButton(true, animated: false)
+        }
+    }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         //Delete existing view controllers on navigation stack if view controller can be made the head of the stack.
