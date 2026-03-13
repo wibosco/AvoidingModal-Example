@@ -17,5 +17,4 @@ class RootTabBarController: UITabBarController {
 
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
 }
