@@ -10,7 +10,9 @@
 		43627D2A2F64D456002D75D6 /* GateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43627D282F64D456002D75D6 /* GateNavigationController.swift */; };
 		43627D332F64D56D002D75D6 /* NonGateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43627D322F64D56D002D75D6 /* NonGateViewController.swift */; };
 		43627D352F64D57A002D75D6 /* GateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43627D342F64D57A002D75D6 /* GateViewController.swift */; };
-		91A9FAE71E0C2E230030E082 /* AvoidingModal_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9FAE61E0C2E230030E082 /* AvoidingModal_ExampleTests.swift */; };
+		43EF7A932F6974F90094E1F3 /* GateNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF7A912F6974F90094E1F3 /* GateNavigationControllerTests.swift */; };
+		43EF7A952F6975130094E1F3 /* StubNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF7A942F6975130094E1F3 /* StubNavigationDelegate.swift */; };
+		43EF7A972F6976960094E1F3 /* StubGateRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF7A962F6976960094E1F3 /* StubGateRootViewController.swift */; };
 		91A9FAFD1E0C2E9F0030E082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9FAF21E0C2E9F0030E082 /* AppDelegate.swift */; };
 		91A9FAFF1E0C2E9F0030E082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A9FAF51E0C2E9F0030E082 /* Assets.xcassets */; };
 		91A9FB001E0C2E9F0030E082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A9FAF71E0C2E9F0030E082 /* LaunchScreen.storyboard */; };
@@ -31,9 +33,11 @@
 		43627D282F64D456002D75D6 /* GateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateNavigationController.swift; sourceTree = "<group>"; };
 		43627D322F64D56D002D75D6 /* NonGateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonGateViewController.swift; sourceTree = "<group>"; };
 		43627D342F64D57A002D75D6 /* GateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateViewController.swift; sourceTree = "<group>"; };
+		43EF7A912F6974F90094E1F3 /* GateNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateNavigationControllerTests.swift; sourceTree = "<group>"; };
+		43EF7A942F6975130094E1F3 /* StubNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNavigationDelegate.swift; sourceTree = "<group>"; };
+		43EF7A962F6976960094E1F3 /* StubGateRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubGateRootViewController.swift; sourceTree = "<group>"; };
 		91A9FACE1E0C2E230030E082 /* AvoidingModal-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AvoidingModal-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A9FAE21E0C2E230030E082 /* AvoidingModal-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AvoidingModal-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A9FAE61E0C2E230030E082 /* AvoidingModal_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingModal_ExampleTests.swift; sourceTree = "<group>"; };
 		91A9FAE81E0C2E230030E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A9FAF21E0C2E9F0030E082 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A9FAF31E0C2E9F0030E082 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +81,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		43EF7A902F6974F90094E1F3 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				43EF7A942F6975130094E1F3 /* StubNavigationDelegate.swift */,
+				43EF7A962F6976960094E1F3 /* StubGateRootViewController.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		43EF7A922F6974F90094E1F3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43EF7A912F6974F90094E1F3 /* GateNavigationControllerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		91A9FAC51E0C2E230030E082 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +131,8 @@
 		91A9FAE51E0C2E230030E082 /* AvoidingModal-ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				91A9FAE61E0C2E230030E082 /* AvoidingModal_ExampleTests.swift */,
+				43EF7A902F6974F90094E1F3 /* Doubles */,
+				43EF7A922F6974F90094E1F3 /* Tests */,
 				91A9FAE81E0C2E230030E082 /* Info.plist */,
 			);
 			path = "AvoidingModal-ExampleTests";
@@ -257,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A9FAE71E0C2E230030E082 /* AvoidingModal_ExampleTests.swift in Sources */,
+				43EF7A952F6975130094E1F3 /* StubNavigationDelegate.swift in Sources */,
+				43EF7A932F6974F90094E1F3 /* GateNavigationControllerTests.swift in Sources */,
+				43EF7A972F6976960094E1F3 /* StubGateRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

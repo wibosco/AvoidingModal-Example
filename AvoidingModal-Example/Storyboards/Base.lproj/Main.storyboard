@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="-322.39999999999998" y="-1131.1844077961021"/>
         </scene>
-        <!--Non Gate View Controller-->
+        <!--Non-Gated-->
         <scene sceneID="YeD-7y-Akz">
             <objects>
                 <viewController id="y4m-Ch-xf0" customClass="NonGateViewController" customModule="AvoidingModal_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,16 +111,16 @@
                             <constraint firstItem="lpc-yg-U2T" firstAttribute="leading" secondItem="uEl-YC-BKI" secondAttribute="leadingMargin" constant="20" id="du8-vo-Fxq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ETj-n1-l2O"/>
+                    <navigationItem key="navigationItem" title="Non-Gated" id="ETj-n1-l2O"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXW-ts-4zz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="638" y="-808"/>
         </scene>
-        <!--Gate View Controller-->
+        <!--Gated-->
         <scene sceneID="YWm-1v-xQN">
             <objects>
-                <viewController id="yzg-tz-pnQ" customClass="GateViewController" customModule="AvoidingModal_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Gated" id="yzg-tz-pnQ" customClass="GateViewController" customModule="AvoidingModal_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H5m-AZ-GMw"/>
                         <viewControllerLayoutGuide type="bottom" id="KfP-LX-ujK"/>
@@ -143,7 +143,7 @@
                             <constraint firstItem="i24-ob-gre" firstAttribute="leading" secondItem="iab-gw-YX2" secondAttribute="leadingMargin" constant="20" id="KwI-9Z-Ziz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NNY-Op-SzH"/>
+                    <navigationItem key="navigationItem" title="Gated" id="NNY-Op-SzH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCi-tn-nOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +155,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  RootNavigationController.swift
+//  GateNavigationController.swift
 //  AvoidingModal-Example
 //
 //  Created by William Boles on 06/01/2017.
