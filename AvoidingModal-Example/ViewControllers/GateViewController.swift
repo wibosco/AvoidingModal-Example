@@ -1,5 +1,5 @@
 //
-//  GatedViewController.swift
+//  GateViewController.swift
 //  AvoidingModal-Example
 //
 //  Created by William Boles on 13/03/2026.
