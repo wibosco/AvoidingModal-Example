@@ -8,4 +8,4 @@
 
 import UIKit
 
-class GateViewController: UIViewController, GateRoot { }
+class GateViewController: UIViewController, NavigationGate { }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol GateRoot { }
+protocol NavigationGate { }
 
 class GateNavigationController: UINavigationController {
     
@@ -45,9 +45,7 @@ extension GateNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-        if viewController is GateRoot {
-            // Hiding the back button here avoids it appearing and then
-            // disappearing when the navigation stack is trimmed
+        if viewController is NavigationGate {
             viewController.navigationItem.setHidesBackButton(true,
                                                              animated: false)
         }
@@ -60,7 +58,7 @@ extension GateNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               didShow viewController: UIViewController,
                               animated: Bool) {
-        if viewController is GateRoot {
+        if viewController is NavigationGate {
             viewControllers = [viewController]
         }
         

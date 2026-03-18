@@ -9,4 +9,4 @@
 import UIKit
 @testable import AvoidingModal_Example
 
-class StubGateRootViewController: UIViewController, GateRoot {}
+class StubGateRootViewController: UIViewController, NavigationGate {}
