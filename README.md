@@ -3,4 +3,4 @@
 [![License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](https://github.com/wibosco/AvoidingModal-Example/blob/main/LICENSE)
 
 # AvoidingModal-Example
-An example project to show how for on-boarding sections of our apps we can avoid using modal view controllers as "walls" as shown in this article - https://williamboles.com/avoiding-modal-transitions-by-thinking-horizontally/
+An example project to show how we can use "gates" to control moving between navigation flows, as shown in this post - https://williamboles.com/closing-the-gate-when-the-user-walks-through/
